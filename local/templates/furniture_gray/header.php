@@ -134,7 +134,7 @@ IncludeTemplateLangFile(__FILE__);
                                         <a href="index.php">Главная</a>
                                     </li>
                                     <li>
-                                        <a href="about-us.php">О нас</a>
+                                        <a href="about.php">О нас</a>
                                     </li>
                                     <li>
                                         <a href="services.html"> Услуги
@@ -199,13 +199,13 @@ IncludeTemplateLangFile(__FILE__);
                         <nav id="dropdown">
                             <ul>
                                 <li>
-                                    <a href="index.html">Главная</a>
+                                    <a href="index.php">Главная</a>
                                 </li>
                                 <li>
-                                    <a href="about_us.html">О нас</a>
+                                    <a href="about_us.php">О нас</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">Услуги</a>
+                                    <a href="services.php">Услуги</a>
                                     <ul>
                                         <li>
                                             <a href="services_landing.html">Лендинг</a>
@@ -245,7 +245,7 @@ IncludeTemplateLangFile(__FILE__);
                 <div class="breadcrumb-menu">
                     <ol class="breadcrumb text-right">
                         <li>
-                            <a href="index.html">Главная</a>
+                            <a href="index.php">Главная</a>
                         </li>
                         <li>
                             <a href="#">О нас</a>
