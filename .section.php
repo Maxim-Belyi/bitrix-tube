@@ -3,6 +3,7 @@ $sSectionName = "Главная";
 $arDirProperties = Array(
    "description" => "digital агенство",
    "keywords" => "digital агенство",
+   "title" => "Главная",
    "ROBOTS" => "index, follow"
 );
 ?>

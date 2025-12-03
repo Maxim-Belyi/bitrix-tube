@@ -1,10 +1,12 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+<?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
+    die();
 IncludeTemplateLangFile(__FILE__);
+global $APPLICATION
 ?>
 
 
 <!-- Футер -->
-<footer  class="footer-style-2">
+<footer class="footer-style-2">
     <div class="footer-top-area brand-bg pad-70">
         <div class="container">
             <div class="row">
@@ -13,7 +15,7 @@ IncludeTemplateLangFile(__FILE__);
                         <!-- Лого + текст -->
                         <div class="footer-logo">
                             <a href="#">
-                                <img src="img/logo/logo-white.png" alt=""/>
+                                <img src="img/logo/logo-white.png" alt="" />
                             </a>
                         </div>
                         <p>Если вы похожи на большинство компаний, у вас нет маркетингового бюджета в миллион
@@ -77,38 +79,29 @@ IncludeTemplateLangFile(__FILE__);
 </footer>
 
 
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/vendor/jquery-1.12.0.min.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/bootstrap.min.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/owl.carousel.min.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/jquery.counterup.min.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/waypoints.min.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/jquery.magnific-popup.min.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/jquery.mixitup.min.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/jquery.meanmenu.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/jquery.nav.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/jquery.parallax-1.1.3.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assetsj/s/animate-text.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/plugins.js"></script>
-<script src="<?= SITE_TEMPLATE_PATH ?>/assets/js/main.js"></script>
 </body>
+
 </html>
 
 <?php
-$APPLICATION->IncludeComponent("bitrix:menu", "bottom", array(
-	"ROOT_MENU_TYPE" => "bottom",
-	"MENU_CACHE_TYPE" => "N",
-	"MENU_CACHE_TIME" => "36000000",
-	"MENU_CACHE_USE_GROUPS" => "Y",
-	"MENU_CACHE_GET_VARS" => array(
-	),
-	"MAX_LEVEL" => "1",
-	"CHILD_MENU_TYPE" => "left",
-	"USE_EXT" => "N",
-	"ALLOW_MULTI_SELECT" => "N"
-	),
-	false
+$APPLICATION->IncludeComponent(
+    "bitrix:menu",
+    "bottom",
+    array(
+        "ROOT_MENU_TYPE" => "bottom",
+        "MENU_CACHE_TYPE" => "N",
+        "MENU_CACHE_TIME" => "36000000",
+        "MENU_CACHE_USE_GROUPS" => "Y",
+        "MENU_CACHE_GET_VARS" => array(
+        ),
+        "MAX_LEVEL" => "1",
+        "CHILD_MENU_TYPE" => "left",
+        "USE_EXT" => "N",
+        "ALLOW_MULTI_SELECT" => "N"
+    ),
+    false
 );
 ?>
-		</div>
-		<div id="footer-design"><?=GetMessage("FOOTER_DISIGN")?></div>
-	</div>
+</div>
+<div id="footer-design"><?= GetMessage("FOOTER_DISIGN") ?></div>
+</div>

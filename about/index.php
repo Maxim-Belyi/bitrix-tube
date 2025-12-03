@@ -27,7 +27,7 @@ $APPLICATION->SetPageProperty("description", "О нашей компании");
             </div>
             <div class="col-md-5">
                 <div class="about-bg">
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/about/o_nas_text_block.jpg" alt=""/>
+                    <img src="<?= SITE_TEMPLATE_PATH ?>/src/img/about/o_nas_text_block.jpg" alt=""/>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ $APPLICATION->SetPageProperty("description", "О нашей компании");
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="single-team mb-30">
                     <div class="team-img">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/team/team1.jpg" alt=""/>
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/src/img/team/team1.jpg" alt=""/>
                         <div class="team-text">
                             <h4>Привет всем!</h4>
                             <p>Ни один человек за всю историю не добился ничего великого, не породив этого сначала в
@@ -68,7 +68,7 @@ $APPLICATION->SetPageProperty("description", "О нашей компании");
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="single-team mb-30">
                     <div class="team-img">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/team/team2.jpg" alt=""/>
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/src/img/team/team2.jpg" alt=""/>
                         <div class="team-text">
                             <p>Сосредоточь все силы на достижение желаемого, чтобы у тебя не было времени бояться
                                 нежелательного.</p>
@@ -88,7 +88,7 @@ $APPLICATION->SetPageProperty("description", "О нашей компании");
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="single-team mb-30">
                     <div class="team-img">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/team/team3.jpg" alt=""/>
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/src/img/team/team3.jpg" alt=""/>
                         <div class="team-text">
                             <h4>Привет!</h4>
                             <p>Чем дольше вы идете к успеху, тем он становится ближе. Слишком многие бросают дело за

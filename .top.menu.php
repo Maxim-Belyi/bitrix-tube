@@ -1,22 +1,15 @@
-<?
+<?php
 $aMenuLinks = Array(
 	Array(
-		"Компания", 
-		"company/", 
+		"Главная",
+		"index/",
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Новости", 
-		"news/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Продукция", 
-		"products/", 
+		"О нас",
+		"about/",
 		Array(), 
 		Array(), 
 		"" 
@@ -29,18 +22,12 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Контакты", 
-		"contacts/", 
+		"Портфолио",
+		"portfolio/",
 		Array(), 
 		Array(), 
 		"" 
 	),
-	Array(
-		"Какой то пункт добавлен через панель", 
-		"/kakaya-stranitsa-cherez-panel.php", 
-		Array(), 
-		Array(), 
-		"" 
-	)
+
 );
-?>
+?>;

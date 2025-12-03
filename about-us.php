@@ -1,5 +1,7 @@
 <?php
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty('TITLE', "О нас");
+
 ?>
 
 <section class="who-area-are pad-90" id="about_us">
