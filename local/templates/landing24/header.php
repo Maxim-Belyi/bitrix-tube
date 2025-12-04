@@ -105,53 +105,25 @@ global $APPLICATION;
                             <!-- Меню (основное)  -->
                             <div class="col-md-10 col-sm-9 col-xs-4 text-right dark-menu">
                                 <div class="header-main-menu hidden-xs">
-                                    <!-- <?php
-                                    $APPLICATION->IncludeComponent(
-                                        "bitrix:menu",
-                                        "headerMenu",
-                                        [
-                                            "MAX_LEVEL" => "2",
-                                            "CHILD_MENU_TYPE" => "child",
-                                            "ROOT_MENU_TYPE" => "top",
-                                            "USE_EXT" => "Y",
-                                            "MENU_CACHE_TYPE" => "A",
-                                            "MENU_CACHE_TIME" => "36000",
-                                            "MENU_CACHE_USE_GROUPS" => "Y",
-                                            "MENU_CACHE_GET_VARS" => ""
-                                        ]
-                                    );
-                                    ?> -->
+
                                     <nav id="primary-menu">
-                                        <ul class="main-menu text-right">
-                                            <li>
-                                                <a href="/">Главная</a>
-                                            </li>
-                                            <li>
-                                                <a href="
-                            <?php SITE_TEMPLATE_PATH ?>/about/index.php">О нас</a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html"> Услуги
-                                                    <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
-                                                <ul class="dropdown">
-                                                    <li>
-                                                        <a href="services_landing.html">Лендинг</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="services_online_shop.html">Интернет-магазин</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio.html"> Портфолио</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Блог</a>
-                                            </li>
-                                            <li>
-                                                <a href="contacts.html">Контакты</a>
-                                            </li>
-                                        </ul>
+                                        <?php
+                                        $APPLICATION->IncludeComponent(
+                                            "bitrix:menu",
+                                            "top",
+                                            [
+                                                "MAX_LEVEL" => "2",
+                                                "CHILD_MENU_TYPE" => "child",
+                                                "ROOT_MENU_TYPE" => "top",
+                                                "USE_EXT" => "Y",
+                                                "MENU_CACHE_TYPE" => "A",
+                                                "MENU_CACHE_TIME" => "36000",
+                                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                                "MENU_CACHE_GET_VARS" => ""
+                                            ]
+                                        );
+                                        ?>
+
                                     </nav>
                                 </div>
 

@@ -49,7 +49,26 @@ global $APPLICATION
 
                 <div class="col-lg-7 col-md-7 col-sm-12">
                     <div class="footer-nav white-text">
-                        <nav>
+                        <?php
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "bottom",
+                            array(
+                                "ROOT_MENU_TYPE" => "bottom",
+                                "MENU_CACHE_TYPE" => "N",
+                                "MENU_CACHE_TIME" => "36000000",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_CACHE_GET_VARS" => array(
+                                ),
+                                "MAX_LEVEL" => "1",
+                                "CHILD_MENU_TYPE" => "left",
+                                "USE_EXT" => "N",
+                                "ALLOW_MULTI_SELECT" => "N"
+                            ),
+                            false
+                        );
+                        ?>
+                        <!-- <nav>
                             <ul>
                                 <li class="mega-parent">
                                     <a href="index.php">Главная</a>
@@ -70,7 +89,7 @@ global $APPLICATION
                                     <a href="contacts.html">Контакты</a>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav> -->
                     </div>
                 </div>
             </div>
@@ -83,25 +102,7 @@ global $APPLICATION
 
 </html>
 
-<?php
-$APPLICATION->IncludeComponent(
-    "bitrix:menu",
-    "bottom",
-    array(
-        "ROOT_MENU_TYPE" => "bottom",
-        "MENU_CACHE_TYPE" => "N",
-        "MENU_CACHE_TIME" => "36000000",
-        "MENU_CACHE_USE_GROUPS" => "Y",
-        "MENU_CACHE_GET_VARS" => array(
-        ),
-        "MAX_LEVEL" => "1",
-        "CHILD_MENU_TYPE" => "left",
-        "USE_EXT" => "N",
-        "ALLOW_MULTI_SELECT" => "N"
-    ),
-    false
-);
-?>
+
 </div>
 <div id="footer-design"><?= GetMessage("FOOTER_DISIGN") ?></div>
 </div>
