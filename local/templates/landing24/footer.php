@@ -1,5 +1,6 @@
 <?php if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
     die();
+use Bitrix\Main\Page\Asset;
 IncludeTemplateLangFile(__FILE__);
 global $APPLICATION
 ?>
@@ -68,28 +69,6 @@ global $APPLICATION
                             false
                         );
                         ?>
-                        <!-- <nav>
-                            <ul>
-                                <li class="mega-parent">
-                                    <a href="index.php">Главная</a>
-                                </li>
-                                <li>
-                                    <a href="about_us.html">О нас</a>
-                                </li>
-                                <li>
-                                    <a href="services.html">Услуги</a>
-                                </li>
-                                <li>
-                                    <a href="portfolio.html">Портфолио</a>
-                                </li>
-                                <li>
-                                    <a href="blog.html">Блог</a>
-                                </li>
-                                <li>
-                                    <a href="contacts.html">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav> -->
                     </div>
                 </div>
             </div>
@@ -99,6 +78,7 @@ global $APPLICATION
 
 
 </body>
+
 
 </html>
 
