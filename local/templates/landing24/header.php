@@ -7,7 +7,7 @@ global $APPLICATION;
 ?>
 
 <!DOCTYPE html>
-<xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?= LANGUAGE_ID ?>" lang="ru">
+<xmlns="http: //www.w3.org/1999/xhtml" xml:lang="<?= LANGUAGE_ID ?>" lang="ru">
 
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@ global $APPLICATION;
         <?php
         // CJSCore::Init(array('jquery'));
         // Asset::getInstance()->addJs("https://code.jquery.com/jquery-migrate-3.4.1.min.js");
-
+        
 
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/bootstrap.min.css");
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/owl.carousel.css");
@@ -69,8 +69,18 @@ global $APPLICATION;
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <div class="welcome">
-                            <span><i class="fa fa-envelope"></i> maxim@white.com</span>
-                            <span><i class="fa fa-phone"></i> +79194029458</span>
+                            <span><?php $APPLICATION->IncludeComponent("bitrix:main.include",
+                                "",[
+                                    "AREA_FILE_SHOW" => "file",
+                                    "PATH" => SITE_TEMPLATE_PATH . "/includes/header_email.php",
+                                ]) ?></span>
+                            <span>
+                                <?php $APPLICATION->IncludeComponent("bitrix:main.include",
+                                "",[
+                                    "AREA_FILE_SHOW" => "file",
+                                    "PATH" => SITE_TEMPLATE_PATH . "/includes/header_phone.php",
+                                ]) ?>
+                            </span>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">

@@ -1,6 +1,5 @@
 <?php
 global $APPLICATION;
-//$APPLICATION->SetTitle("Главная");
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Главная");
 ?>
@@ -68,6 +67,48 @@ $APPLICATION->SetTitle("Главная");
 		"STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
 	),
 	false
-);
+); ?>
+<section class="who-area-are pad-90" id="about_us">
+    <div class="container">
+        <h2 class="title-1">
+            <?php $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                array(
+                    "AREA_FILE_SHOW" => "page",
+                    "AREA_FILE_SUFFIX" => "about_title",
+                    "PATH" => SITE_TEMPLATE_PATH . "/about-us-title.php",
+                )
+            ); ?>
+        </h2>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="who-we">
+                    <?php $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        array(
+                            "AREA_FILE_SHOW" => "page",
+                            "AREA_FILE_SUFFIX" => "about_text",
+                            "PATH" => SITE_TEMPLATE_PATH . "/about-us-text.php",
+                        )
+                    ); ?>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="about-bg">
+                    <?php $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        array(
+                            "AREA_FILE_SHOW" => "page",
+                            "AREA_FILE_SUFFIX" => "about_image",
+                            "PATH" => SITE_TEMPLATE_PATH . "/about-us-image.php",
+                        )
+                    ); ?>
+                </div>
+            </div>
+        </div>
+    </div>
 
-require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?php require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
