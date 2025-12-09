@@ -1,3 +1,3 @@
 <?php
 $sSectionName = "Какая то секция";
-$arDirProperties = Array("TITLE" => "Title раздела");
+$arDirProperties = Array("TITLE" => "О нас");
