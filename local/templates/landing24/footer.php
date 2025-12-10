@@ -16,7 +16,7 @@ global $APPLICATION
                         <!-- Лого + текст -->
                         <div class="footer-logo">
                             <a href="#">
-                                <img src="img/logo/logo-white.png" alt="" />
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo/logo-white.png" alt="main logo">
                             </a>
                         </div>
                         <p>Если вы похожи на большинство компаний, у вас нет маркетингового бюджета в миллион
