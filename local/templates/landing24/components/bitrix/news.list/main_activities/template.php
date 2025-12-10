@@ -24,8 +24,7 @@ $this->setFrameMode(true);
 					<h2>Основные направления</h2>
 					<p>Всё что нужно для производства сайта любой сложности</p>
 				</div>
-			</div>
-			<div class="row">
+			
 
 				<?php foreach ($arResult["ITEMS"] as $arItem): ?>
 					<div class="col-lg-4 col-md-4 col-sm-6">
