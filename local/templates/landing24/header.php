@@ -16,15 +16,11 @@ global $APPLICATION;
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" type="image/x-icon" href="<?php SITE_TEMPLATE_PATH ?>/assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH ?>/assets/img/favicon.png">
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
         <?php
-        // CJSCore::Init(array('jquery'));
-        // Asset::getInstance()->addJs("https://code.jquery.com/jquery-migrate-3.4.1.min.js");
-        
-
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/bootstrap.min.css");
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/owl.carousel.css");
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/assets/css/animate-text.css");
