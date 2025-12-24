@@ -300,9 +300,7 @@ $APPLICATION->SetPageProperty("services", "Чем мы занимаемся");
             ),
             false
         ); ?>
-
     </div>
 </section>
-
 
 <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

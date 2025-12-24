@@ -3,6 +3,7 @@ global $APPLICATION;
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("О нас");
 
+$APPLICATION->SetPageProperty("title", "О нас");
 $APPLICATION->SetPageProperty("keywords", "о нас, о компании, we coders, сайты");
 $APPLICATION->SetPageProperty("description", "О нашей компании");
 ?>

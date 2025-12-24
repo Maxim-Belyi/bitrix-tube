@@ -7,7 +7,7 @@ global $APPLICATION;
 ?>
 
 <!DOCTYPE html>
-<xmlns="http: //www.w3.org/1999/xhtml" xml:lang="<?= LANGUAGE_ID ?>" lang="ru">
+<xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?= LANGUAGE_ID ?>" lang="ru">
 
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,7 @@ global $APPLICATION;
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH ?>/assets/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/assets/img/favicon.png">
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
@@ -131,7 +131,6 @@ global $APPLICATION;
                                             ]
                                         );
                                         ?>
-
                                     </nav>
                                 </div>
 
