@@ -5,70 +5,7 @@ $APPLICATION->SetTitle("Наши работы");
 
 $APPLICATION->SetPageProperty("title", "Портфолио | We coders");
 ?>
-<section class="work-area pad-90">
-    <div class="container">
-        <div class="row">
-            <div class="section-heading text-center mb-70">
-                <h2>
-                    <? $APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        array(
-                            "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/portfolio/title.php"
-                        )
-                    ); ?>
-                </h2>
-                <p>
-                    <? $APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        array(
-                            "AREA_FILE_SHOW" => "file",
-                            "PATH" => SITE_TEMPLATE_PATH . "/includes/portfolio/title.php"
-                        )
-                    ); ?>
-                </p>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <? $APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list", 
-	"portfoilio_nav", 
-	array(
-		"ADDITIONAL_COUNT_ELEMENTS_FILTER" => "additionalCountFilter",
-		"ADD_SECTIONS_CHAIN" => "N",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "N",
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"COUNT_ELEMENTS" => "N",
-		"COUNT_ELEMENTS_FILTER" => "CNT_ALL",
-		"FILTER_NAME" => "sectionsFilter",
-		"HIDE_SECTIONS_WITH_ZERO_COUNT_ELEMENTS" => "N",
-		"HIDE_SECTION_NAME" => "N",
-		"IBLOCK_ID" => "15",
-		"IBLOCK_TYPE" => "Portfolio",
-		"SECTION_CODE" => "",
-		"SECTION_FIELDS" => array(
-			0 => "CODE",
-			1 => "NAME",
-			2 => "",
-		),
-		"SECTION_ID" => $_REQUEST["SECTION_ID"],
-		"SECTION_URL" => "",
-		"SECTION_USER_FIELDS" => array(
-			0 => "",
-			1 => "",
-		),
-		"SHOW_PARENT_NAME" => "Y",
-		"TOP_DEPTH" => "2",
-		"VIEW_MODE" => "LINE",
-		"COMPONENT_TEMPLATE" => "portfoilio_nav"
-	),
-	false
-); ?>
+
             <? $APPLICATION->IncludeComponent(
                 "bitrix:news",
                 "portfolio_news",
@@ -171,6 +108,5 @@ $APPLICATION->SetPageProperty("title", "Портфолио | We coders");
                 ),
                 false
             ); ?>
-        </div>
-</section>
+
 <?php require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
