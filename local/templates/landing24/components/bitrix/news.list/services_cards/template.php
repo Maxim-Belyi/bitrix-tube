@@ -43,7 +43,7 @@ $this->setFrameMode(true);
 						</ul>
 					</div>
 					<div class="get-started">
-						<a href="#" class="btn <?=$arItem["PROPERTIES"]["BG_PRICE_BUTTON"]["VALUE_XML_ID"]?>">Узнать больше</a>
+						<a href="<?= $arItem["DETAIL_PAGE_URL"] ?>" class="btn <?=$arItem["PROPERTIES"]["BG_PRICE_BUTTON"]["VALUE_XML_ID"]?>">Узнать больше</a>
 					</div>
 				</div>
 			</div>
