@@ -14,34 +14,27 @@
 $this->setFrameMode(true);
 ?>
 
-<div class="single-portfolio-area pt-90 pb-60">
+<pre style="background: #fff; color: #000; padding: 10px; border: 1px solid blue; text-align: left;">
+	<?php print_r($arResult); ?>
+</pre>
+<section class="who-area-are pad-90" id="about_us">
 	<div class="container">
+		<h2 class="title-1"><?= $arResult["PROPERTIES"]["detail_title"]["VALUE"] ?></h2>
 		<div class="row">
 			<div class="col-md-7">
-				<div class="portfolio-details">
-					<h3><?= $arResult["PROPERTIES"]["detail_title"]["VALUE"] ?></h3>
-					<?= $arResult["PROPERTIES"]["detail_description"]["~VALUE"]["TEXT"] ?>
+				<div class="who-we">
+					
+						<?= $arResult["PROPERTIES"]["detail_desc"]["~VALUE"]["TEXT"] ?>
 				</div>
 			</div>
 			<div class="col-md-5">
-				<div class="portfolio-meta">
-					<ul>
-						<?php foreach ($arResult["PROPERTIES"]["additional_info"]["VALUE"] as $key => $value): ?>
-							<?php $description = $arResult["PROPERTIES"]["additional_info"]["DESCRIPTION"][$key]; ?>
-							<?php if (!empty($value)): ?>
-								<li>
-									<span><b><?= $value ?>:</b> </span>
-									<?= $description ?>
-								</li>
-							<?php endif; ?>
-
-						<?php endforeach; ?>
-					</ul>
-					<a href="#" class="btn mt-30">Посмотреть сайт</a>
+				<div class="about-bg">
+					<img src="<?= $arResult["PREVIEW_PICTURE"]["SRC"]?>" alt="<?= $arResult["PREVIEW_PICTURE"]["ALT"]?>" />
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
 </div>
 
 <div class="img-gallery-area pt-30 pb-60">
