@@ -11,41 +11,31 @@ $APPLICATION->SetPageProperty("description", "О нашей компании");
 <section class="who-area-are pad-90" id="about_us">
     <div class="container">
         <h2 class="title-1">
-            <?php $APPLICATION->IncludeComponent(
+            <? $APPLICATION->IncludeComponent(
                 "bitrix:main.include",
                 "",
                 array(
-                    "AREA_FILE_SHOW" => "page",
-                    "AREA_FILE_SUFFIX" => "about_title",
-                    "PATH" => SITE_TEMPLATE_PATH . "/about-us-title.php",
+                    "AREA_FILE_SHOW" => "file",
+                    "PATH" => SITE_TEMPLATE_PATH . "/includes/about/about_title.php"
                 )
             ); ?>
         </h2>
         <div class="row">
             <div class="col-md-7">
                 <div class="who-we">
-                    <?php $APPLICATION->IncludeComponent(
+                    <? $APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "",
                         array(
-                            "AREA_FILE_SHOW" => "page",
-                            "AREA_FILE_SUFFIX" => "about_text",
-                            "PATH" => SITE_TEMPLATE_PATH . "/about-us-text.php",
+                            "AREA_FILE_SHOW" => "file",
+                            "PATH" => SITE_TEMPLATE_PATH . "/includes/about/index_about_text.php"
                         )
                     ); ?>
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="about-bg">
-                    <?php $APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        array(
-                            "AREA_FILE_SHOW" => "page",
-                            "AREA_FILE_SUFFIX" => "about_image",
-                            "PATH" => SITE_TEMPLATE_PATH . "/about-us-image.php",
-                        )
-                    ); ?>
+                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/about/o_nas_text_block.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -57,8 +47,24 @@ $APPLICATION->SetPageProperty("description", "О нашей компании");
         <div class="container">
             <div class="row">
                 <div class="section-heading text-center mb-70">
-                    <h2>Команда</h2>
-                    <p>Творческие и гениальные. Мастера своего дела</p>
+                    <h2>
+                        <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            array(
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_TEMPLATE_PATH . "/includes/about/about_team_title.php"
+                            )
+                        ); ?>
+                    </h2>
+                    <p>  <? $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            array(
+                                "AREA_FILE_SHOW" => "file",
+                                "PATH" => SITE_TEMPLATE_PATH . "/includes/about/about_team_descr.php"
+                            )
+                        ); ?></p>
                 </div>
             </div>
             <div class="row">
@@ -83,6 +89,7 @@ $APPLICATION->SetPageProperty("description", "О нашей компании");
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="single-team mb-30">
                         <div class="team-img">
