@@ -34,7 +34,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
 						"",
 						array(
 							"AREA_FILE_SHOW" => "file",
-							"PATH" => SITE_TEMPLATE_PATH . "/includes/portfolio/title.php"
+							"PATH" => SITE_TEMPLATE_PATH . "/includes/portfolio/description.php"
 						)
 					); ?>
 				</p>

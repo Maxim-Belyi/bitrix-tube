@@ -13,10 +13,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-
-<pre style="background: #fff; color: #000; padding: 10px; border: 1px solid blue; text-align: left;">
-	<?php print_r($arResult); ?>
-</pre>
 <section class="who-area-are pad-90" id="about_us">
 	<div class="container">
 		<h2 class="title-1"><?= $arResult["PROPERTIES"]["detail_title"]["VALUE"] ?></h2>
