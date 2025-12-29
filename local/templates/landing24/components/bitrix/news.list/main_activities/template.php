@@ -30,7 +30,8 @@ $this->setFrameMode(true);
 					<div class="col-lg-4 col-md-4 col-sm-6">
 						<div class="single-service brand-hover radius-4 mb-30 text-center">
 							<div class="service-icon">
-								<?= isset($arItem["DETAIL_TEXT"]) ? $arItem["DETAIL_TEXT"] : ''; ?>
+								<span class="<?=$arItem["DETAIL_TEXT"]?>" aria-hidden="true"></span>
+								
 							</div>
 							<div class="service-text">
 								<h3><?= isset($arItem['NAME']) ? $arItem['NAME'] : ''; ?></h3>
